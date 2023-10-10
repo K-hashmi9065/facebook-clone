@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Like Website by FreeCodeBox </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- For Navabr Left & Right Started-->
+    <nav>
+        <div class="nav-left">
+            <img src="images/Logo.png" alt="For-Logo" class="logo">
+            <!-- For more Icons -->
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png" alt="Search-icon">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png">
+                <!-- <img src="images/uploads.jpg" alt=""> -->
+            </div>
+        </div>
+        <!-- ---------------Setting-Menu-------------------------- -->
+        <div class="settings-menu">
+
+           <div id="dark-btn">
+            <span></span>
+           </div>
+
+
+            <div class="setting-menu-inner">
+
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Ali Haider Rajput</p>
+                        <!-- <small>Public<ion-icon name="caret-down-outline"></ion-icon></small> -->
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give feedback</p>
+                        <!-- <small>Public<ion-icon name="caret-down-outline"></ion-icon></small> -->
+                        <a href="#">Help us to omprove the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="setting-icon">
+                    <a href="#">Setting & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="images/help.png" class="setting-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="images/display.png" class="setting-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="setting-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- For Navabr Left & Right Ended-->
+
+    <!-- For sidebar & left Right Started-->
+
+    <!-- -------------Left-SideBar----------------- -->
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="For-news-link">Latest Post</a>
+                <a href="#"><img src="images/friends.png" alt="For-news-link">Friends</a>
+                <a href="#"><img src="images/group.png" alt="For-news-link">Groups</a>
+                <a href="#"><img src="images/news.png" alt="For-news-link">Latest Post</a>
+                <a href="#"><img src="images/watch.png" alt="For-news-link">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Yout Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png">App Developers</a>
+                <a href="#"><img src="images/shortcut-3.png">Web Experts</a>
+                <a href="#"><img src="images/shortcut-4.png">Web FreeCodeBox</a>
+            </div>
+        </div>
+
+        <!-- -------------Main-SideBar----------------- -->
+
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="Upload-content">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="images/member-1.png" alt="Upload-content">
+                    <p>Aliha</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="Upload-content">
+                    <p>Ali</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="Upload-content">
+                    <p>Alisha</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="Upload-content">
+                    <p>Rajput</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+
+                    <div>
+                        <p>Ali Haider Rajput</p>
+                        <small>Public<ion-icon name="caret-down-outline"></ion-icon></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea placeholder="What's on your mind, Ali?" rows="3"></textarea>
+
+                    <div class="add-post-link">
+                        <a href="#"><img src="images/live-video.png">Live Video</a>
+                        <a href="#"><img src="images/photo.png">Live Photo</a>
+                        <a href="#"><img src="images/feeling.png">Feeling/Activity</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+
+                        <div>
+                            <p>Ali Haider Rajput</p>
+                            <span><ion-icon name="time-outline"></ion-icon>May 06 2024, 12:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+
+                </div>
+
+
+                <p class="post-text">Subscribe <span> @freecodebox </span>Youtube Channel to watch more videos on
+                    Website/Web Development and UI design also Other development and tech problems. <a
+                        href="https://www.youtube.com/channel/UCbUpOrtvAtssl2M21R8GZlw">#freecodebox</a>
+                    <a href="#">#YoutubeChannel</a>
+                </p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 130</div>
+                        <div><img src="images/comments.png"> 70</div>
+                        <div><img src="images/share.png"> 95</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd Part" -->
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+
+                        <div>
+                            <p>Ali Haider Rajput</p>
+                            <span><ion-icon name="time-outline"></ion-icon>May 06 2024, 12:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+
+                </div>
+
+
+                <p class="post-text">Subscribe <span> @freecodebox </span>Youtube Channel to watch more videos on
+                    Website/Web Development and UI design also Other development and tech problems & Alos Like my
+                    channel. <a href="https://www.youtube.com/channel/UCbUpOrtvAtssl2M21R8GZlw">#freecodebox</a>
+                    <a href="#">#YoutubeChannel</a>
+                </p>
+                <img src="images/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 250</div>
+                        <div><img src="images/comments.png"> 50</div>
+                        <div><img src="images/share.png"> 195</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3RD PART -->
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+
+                        <div>
+                            <p>Ali Haider Rajput</p>
+                            <span><ion-icon name="time-outline"></ion-icon>May 06 2024, 12:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+
+                </div>
+
+
+                <p class="post-text">Subscribe <span> @freecodebox </span>Youtube Channel to watch more videos on
+                    Website/Web Development and UI design also Other development and tech problems. <a
+                        href="https://www.youtube.com/channel/UCbUpOrtvAtssl2M21R8GZlw">#freecodebox</a>
+                    <a href="#">#YoutubeChannel</a>
+                </p>
+                <img src="images/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 330</div>
+                        <div><img src="images/comments.png"> 170</div>
+                        <div><img src="images/share.png"> 195</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4Th Part -->
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+
+                        <div>
+                            <p>Ali Haider Rajput</p>
+                            <span><ion-icon name="time-outline"></ion-icon>May 06 2024, 12:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+
+                </div>
+
+
+                <p class="post-text">Subscribe <span> @freecodebox </span>Youtube Channel to watch more videos on
+                    Website/Web Development and UI design also Other development and tech problems. <a
+                        href="https://www.youtube.com/channel/UCbUpOrtvAtssl2M21R8GZlw">#freecodebox</a>
+                    <a href="#">#YoutubeChannel</a>
+                </p>
+                <img src="images/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 5130</div>
+                        <div><img src="images/comments.png"> 270</div>
+                        <div><img src="images/share.png"> 295</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5th part -->
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+
+                        <div>
+                            <p>Ali Haider Rajput</p>
+                            <span><ion-icon name="time-outline"></ion-icon>May 06 2024, 12:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+
+                </div>
+
+
+                <p class="post-text">Subscribe <span> @freecodebox </span>Youtube Channel to watch more videos on
+                    Website/Web Development and UI design also Other development and tech problems. <a
+                        href="https://www.youtube.com/channel/UCbUpOrtvAtssl2M21R8GZlw">#freecodebox</a>
+                    <a href="#">#YoutubeChannel</a>
+                </p>
+                <img src="images/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 1130</div>
+                        <div><img src="images/comments.png"> 270</div>
+                        <div><img src="images/share.png"> 395</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+
+
+
+        <!-- -------------Right-SideBar----------------- -->
+
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><ion-icon name="location-outline"></ion-icon>Al Zaia Market</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>April</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><ion-icon name="location-outline"></ion-icon>FreeCodeBox Tech</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+
+            <img src="images/advertisement.png" class="sidebar-adds">
+
+            <div class="sidebar-title">
+                <h4>Converstion</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="online-member">
+                </div>
+                <p>Alisha Rajput</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="online-member">
+                </div>
+                <p>Ali Rajput</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="online-member">
+                </div>
+                <p>Aliha Rajput</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- For sidebar left & Right Ended-->
+
+    <!-- Footer Started -->
+
+    <div class="footer">
+        <p>Copyright 2024 - freecodebox Youtube Channel</p>
+    </div>
+
+
+
+
+
+
+
+    <!-- Origional Javascript for Login Page -->
+    <script src="script.js"></script>
+
+
+    <!-- icons javascript -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

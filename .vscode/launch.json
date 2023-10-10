@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://172.18.0.13:3000/Home.html",
+            "request": "launch",
+            "url": "http://172.18.0.13:3000/Home.html"
+        }
+    ]
+}
